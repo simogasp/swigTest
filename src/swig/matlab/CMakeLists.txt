@@ -1,4 +1,9 @@
-find_package(Matlab REQUIRED COMPONENTS MAT_LIBRARY MX_LIBRARY)
+if(${CMAKE_MAJOR_VERSION}.${CMAKE_MINOR_VERSION} GREATER 3.6)
+    find_package(Matlab REQUIRED COMPONENTS MAT_LIBRARY MX_LIBRARY)
+else()
+    find_package(Matlab REQUIRED)
+endif()
+
 include_directories(${Matlab_INCLUDE_DIRS})
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR})
