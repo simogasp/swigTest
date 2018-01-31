@@ -43,4 +43,4 @@ The generation of the wrappers is controlled by two cmake options:
 option(BUILD_MATLAB_WRAPPER "Build the matlab wrapper with SWIG" ON)
 option(BUILD_PYTHON_WRAPPER "Build the python wrapper with SWIG" ON)
 ```
-so you can change the behaviour at `cmake` with eg `-DBUILD_MATLAB_WRAPPER:BOOL=OFF`.
+so you can change the behaviour at `cmake` time with eg `-DBUILD_MATLAB_WRAPPER:BOOL=OFF`.
