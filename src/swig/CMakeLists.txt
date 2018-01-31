@@ -1,0 +1,6 @@
+if(${BUILD_MATLAB_WRAPPER})
+    add_subdirectory(matlab)
+endif()
+if(${BUILD_PYTHON_WRAPPER})
+    add_subdirectory(python)
+endif()
